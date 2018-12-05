@@ -35,16 +35,16 @@
 Peter,Hammanはフェルミ準位における局所状態密度(Local Density of States at Fermi level.
 以下、LDOS($E_F$))が金属表面の反応性を決めていると提唱した。
 これは、遷移金属のLDOS($E_F$)が小さければ小さいほど、その表面の反応性は低く、
-逆にLDOS($E_F$)が大きければ反応性が高いという考え方である。Ref[1]
+逆にLDOS($E_F$)が大きければ反応性が高いという考え方である。\cite{PeterJ.Feibelman1984}
 
 \subsubsection{d空孔の数}
 金属のdバンドの上位の電子がsバンドに移ると空孔ができる。これをd空孔(d-holes)と呼び、
 その数を$N_h$と表現する。
 
 遷移金属のd空孔にs電子が戻るというd-s遷移(例えば5d空孔に6s軌道から遷移)により、パウリ反発
-(分子軌道と金属d軌道とが重なることによるエネルギーの上昇)が減る。Ref[4],Pauli repulsion.pdf
+(分子軌道と金属d軌道とが重なることによるエネルギーの上昇)が減る。Pauli repulsion.pdf
 これにより金属表面-分子間結合の形成が促されるため、結果的にd空孔の数$N_h$が多いほどその
-金属の反応性が高くなるという結論が得られた。
+金属の反応性が高くなるという結論が得られた。\cite{J.Harris1985}
 
 \subsection{先行研究の破綻}
 以上に述べた二つの指標はおおよその反応性を決定づけることができるもののすべての
@@ -158,8 +158,8 @@ Pt単体より小さいことが分かる。
 \end{figure}
 
 水素原子が金属表面のs電子、p電子とだけ相互作用した場合、
-水素の結合性軌道と反結合性軌道の概略図は図\ref{fig:interactedDOS}A-Bのようになる。反結合性軌道はFermi準位よりも
-少し上、結合性軌道はFermi準位よりも約7eV下に位置している。
+水素の結合性軌道と反結合性軌道の概略図は図\ref{fig:interactedDOS}A-Bのようになる。
+反結合性軌道はFermi準位よりも少し上、結合性軌道はFermi準位よりも約7eV下に位置している。
 
 \begin{figure}[hbtp]
     \begin{center}
@@ -171,7 +171,7 @@ Pt単体より小さいことが分かる。
 
 今回の実験では、図\ref{fig:dinteractedDOS}のAl(111)がこの例である。
 図\ref{fig:potential}のAl(111)のエネルギー曲線より、自由電子が解離吸着に対して大きな障壁を
-もたらしていることを示している。(36)
+もたらしていることを示している。\cite{Mysyrowicz1993}
 
 \subsubsection{d電子をもつ金属の反応性}
 次にAl以外の金属、つまりd電子を持つ金属の反応性について考える。\\
@@ -220,12 +220,14 @@ PtとCuではdバンドの位置がほとんど同じ(図\ref{fig:dosmetal})で�
 
 $\sigma _g$相互作用は、表面の金属によってかなり大きさが変わる。
 
-図\ref{fig:dinteractedDOS}からわかるように、反結合性$\sigma _g -d$ピークはCuではちょうどdバンドの上あたりにあり
+図\ref{fig:dinteractedDOS}からわかるように、反結合性$\sigma _g -d$ピークはCuでは
+ちょうどdバンドの上あたりにあり
 Cu3Ptではフェルミ準位のあたり、Ptではフェルミ準位の上あたりにシフトしていく。
 
 \section{反応性の新たな指標}
 より定量的な議論のため、反応性の指標を導入する。\\
-dバンドの相互作用によるエネルギー差は式(\ref{deltaepsilon})を用いて式(\ref{deltaets})と表せる。
+dバンドの相互作用によるエネルギー差は式(\ref{deltaepsilon})を用いて式(\ref{deltaets})と
+表せる。
 
 \begin{eqnarray}
     \label{deltaets}
@@ -253,9 +255,9 @@ dバンドの相互作用によるエネルギー差は式(\ref{deltaepsilon})�
 dバンドセンター$\varepsilon_d$は、図\ref{fig:dosmetal}からわかる。\\
 反結合性$\varepsilon _{\sigma_g}$の占有度fは表面のd状態の占有度を用いて近似した。
 金属sp軌道と相互作用した後のH2の結合性、反結合性の準位の位置$\varepsilon _{\sigma_g},
-\varepsilon _{\sigma_u^*}$は、金属にほどんと依存しないとして、Ref[34]、
+\varepsilon _{\sigma_u^*}$は、金属にほどんと依存しないとして、
 前者を-7eV,後者を1eVとした。
-αはフィッティングパラメータとして、Vは式(\ref{v})(Ref[41])より、求めた。
+αはフィッティングパラメータとして、Vは式(\ref{v})(\cite{Nørskov1989})より、求めた。
 
 \begin{eqnarray}
     \label{v}
@@ -281,7 +283,7 @@ $\eta$は結合角度に依存するパラメータである。
 
 \begin{figure}[hbtp]
     \begin{center}
-     \includegraphics[width=16cm]{figure/table.png}
+     \includegraphics[width=14cm]{figure/table.png}
     \end{center}
     \caption{各項の計算値}
     \label{fig:table}
@@ -306,4 +308,6 @@ Auはdバンドがあるにもかかわらず反応性の低い金属になっ�
 考えなければならない。また、反応性と決定づけている表面の重要なパラメータはdバンド
 の位置$\varepsilon_d$と反結合性準位の占有度f、そして、結合エネルギーの要素Vである。
 
+\bibliographystyle{unsrt}
+\bibliography{MyCollection}
 \end{document}
