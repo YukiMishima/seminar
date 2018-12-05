@@ -1,5 +1,7 @@
 \documentclass[12pt]{ltjsarticle}
 
+\usepackage{graphicx}
+
 \begin{document}
 \begin{titlepage}
 \title{金属表面の反応性を決定する指標}
@@ -74,7 +76,16 @@ $Cu_3$Ptは$Cu_3$Auに似た、fccライクな構造をしており格子定数�
 CuとPtに対してはTroullier-Martins型のものを用いた。
 
 \subsection{計算結果}
-各金属の(111)面上でのH2のエネルギー計算結果は図1のようになった。  
+各金属の(111)面上でのH2のエネルギー計算結果は図\ref{fig:potential}のようになった。\\
+
+\begin{figure}[hbtp]
+    \begin{center}
+     \includegraphics[width=8cm]{potential.png}
+    \end{center}
+    \caption{各金属上での吸着エネルギー}
+    \label{fig:potential}
+\end{figure}
+
 金属表面から水素分子から表面までの距離Zを横軸にとり、縦軸がエネルギーである。
 各金属の洗浄表面の全エネルギーと孤立水素分子のエネルギーの和を0としている。
 水素吸着の定量的な議論のため、各金属とおして結合長bと高さZは同じ値を用いて計算を行った。
@@ -82,7 +93,7 @@ Al、Cu、$Cu_3$Pt内のCuサイトでの解離は大きなエネルギー障壁
 Ptや$Cu_3$Pt内のPtサイトには障壁はない。
 
 我々の選択した反応経路の妥当性をを調べるため、水素分子をリラックスさせた場合の
-エネルギーの計算も行った。計算結果は図1の点線で示されているとおりである。
+エネルギーの計算も行った。計算結果は図\ref{fig:potential}の点線で示されているとおりである。
 エネルギー障壁は若干小さくなるものの、傾向は変わらないことが確認できる。
 
 また、計算したポテンシャルのこれらの特徴、すなわち、CuとAl表面では解離吸着に大きな障壁を伴い、
@@ -91,13 +102,22 @@ Ptと$Cu_3$Ptでは自発的に反応が進という傾向は実験の結果と�
 \section{考察}
 
 金属表面の反応性の議論を各金属の状態密度(Density of States)について考えることから始める。
-図2はCu単体でのDOS, Pt単体でのDOS, その間に$Cu_3$PtのDOSを示している。
+図\ref{fig:dosmetal}はCu単体でのDOS, Pt単体でのDOS, その間に$Cu_3$PtのDOSを示している。
+
+\begin{figure}[hbtp]
+    \begin{center}
+     \includegraphics[width=8cm]{figure/DosOfMetal.png}
+    \end{center}
+    \caption{各金属の電子状態密度}
+    \label{fig:dosmetal}
+\end{figure}
+
 $Cu_3$Ptではdバンドの頂点がFermi準位と交差していることに注目してほしい。これは、$Cu_3$Ptの
 dバンドがほどんど占有されておりd空孔がないことを示している。またCu3Pt中のPtサイトのLDOSは
 Pt単体より小さいことが分かる。
 
 以上の事実は従来の指標、LDOS($E_F$)や$N_h$を用いると$Cu_3$PtのPtサイトはPt単体よりも表面の
-反応性は低いという結論に帰着する。しかしながら図1によるとCu3PtのPtサイトはPt単体と同じ程度
+反応性は低いという結論に帰着する。しかしながら図\ref{fig:potential}によるとCu3PtのPtサイトはPt単体と同じ程度
 の吸着エネルギー（反応性）になっている。したがってこれはLDOS($E_F$)や$N_h$では説明できない
 ケースということになる。
 
@@ -129,11 +149,28 @@ Pt単体より小さいことが分かる。
 式(\ref{eabs})を用いて吸着エネルギーの差における定性的な理解を試みよう。
 まずは、d電子を持たず、s,p電子のみを持つ金属表面と水素分子の相互作用を考える。
 
+\begin{figure}[hbtp]
+    \begin{center}
+     \includegraphics[width=11cm]{figure/interactedDOS.png}
+    \end{center}
+    \caption{分子と相互作用した金属の電子状態密度}
+    \label{fig:interactedDOS}
+\end{figure}
+
 水素原子が金属表面のs電子、p電子とだけ相互作用した場合、
-水素の結合性軌道と反結合性軌道の概略図は図3A-Bのようになる。反結合性軌道はFermi準位よりも
+水素の結合性軌道と反結合性軌道の概略図は図\ref{fig:interactedDOS}A-Bのようになる。反結合性軌道はFermi準位よりも
 少し上、結合性軌道はFermi準位よりも約7eV下に位置している。
-今回の実験では、図4のAl(111)がこの例である。
-図1のAl(111)のエネルギー曲線より、自由電子が解離吸着に対して大きな障壁を
+
+\begin{figure}[hbtp]
+    \begin{center}
+     \includegraphics[width=11cm]{figure/dinteractedDOS.png}
+    \end{center}
+    \caption{分子-金属d相互作用した金属の電子状態密度}
+    \label{fig:dinteractedDOS}
+\end{figure}
+
+今回の実験では、図\ref{fig:dinteractedDOS}のAl(111)がこの例である。
+図\ref{fig:potential}のAl(111)のエネルギー曲線より、自由電子が解離吸着に対して大きな障壁を
 もたらしていることを示している。(36)
 
 \subsubsection{d電子をもつ金属の反応性}
@@ -141,16 +178,17 @@ Pt単体より小さいことが分かる。
 式(\ref{eabs})より、d電子の効果によるエネルギーの寄与は1電子エネルギーの差から
 見積もることができる。
 
-図3B-Dはd準位の導入による効果を表している。
+図\ref{fig:interactedDOS}B-Dはd準位の導入による効果を表している。
 Cuのdバンドと水素の分子軌道の相互作用の結果、反結合性軌道のピークは分子準位の中心と
 dバンド中心の上に、結合性軌道のピークは分子準位の中心とdバンド中心の下に位置したDOSが
 得られている。
 
-図1より、dバンドとの相互作用がエネルギー障壁を下げるのに寄与していることが分かる。
+図\ref{fig:potential}より、dバンドとの相互作用がエネルギー障壁を下げるのに
+寄与していることが分かる。
 
 \subsection{dバンドと水素分子軌道の混成によるエネルギー変化の定式化}
-この相互作用の大きさ、すなわちdバンドと水素分子軌道の混成によるエネルギーは式(\ref{deltaepsilon})により
-決定する。
+この相互作用の大きさ、すなわちdバンドと水素分子軌道の混成によるエネルギーは
+式(\ref{deltaepsilon})により決定する。
 
 \begin{equation}
     \label{deltaepsilon}
@@ -165,7 +203,7 @@ dバンド中心の上に、結合性軌道のピークは分子準位の中心�
 \end{enumerate}
 
 \subsubsection{Cuで見る分子ー金属d相互作用の効果}
-図3のCuを例にとってみると、反結合性準位がほとんど空なので、引力的である一方
+図\ref{fig:interactedDOS}のCuを例にとってみると、反結合性準位がほとんど空なので、引力的である一方
 結合性準位-d相互作用は、反結合性のものが占有されているため、分子と金属の重なりの直交化による
 パウリ反発により反発的となる。トータルでは、分子ー金属d相互作用によってAlと比較してCuの方が
 障壁が少し低いという結果になる。
@@ -176,13 +214,13 @@ dバンド中心の上に、結合性軌道のピークは分子準位の中心�
 引力的である。
 CuとCuPt3では結合強度(V)とdバンドの位置がどちらもほとんど同じであるため、$ \sigma _u ^*$
 相互作用の大きさは同程度であると考えられる。
-PtとCuではdバンドの位置がほとんど同じ(図2)であるが、
+PtとCuではdバンドの位置がほとんど同じ(図\ref{fig:dosmetal})であるが、
 結合強度がPtの方が大きいためPtはCuよりも$ \sigma _u ^*$相互作用がより大きい。
 結合強度の違いはCuは3d、Ptはよりバンドが大きい5dであることに起因する。
 
 $\sigma _g$相互作用は、表面の金属によってかなり大きさが変わる。
 
-図4からわかるように、反結合性$\sigma _g -d$ピークはCuではちょうどdバンドの上あたりにあり
+図\ref{fig:dinteractedDOS}からわかるように、反結合性$\sigma _g -d$ピークはCuではちょうどdバンドの上あたりにあり
 Cu3Ptではフェルミ準位のあたり、Ptではフェルミ準位の上あたりにシフトしていく。
 
 \section{反応性の新たな指標}
@@ -212,7 +250,7 @@ dバンドの相互作用によるエネルギー差は式(\ref{deltaepsilon})�
 ここからは、式(\ref{deltaets})を用いて実際に金属の反応性を議論する。
 そのためにそれぞれの系に対して$\varepsilon$、f、$\alpha$、$V^2$の値を求める必要がある。
 
-dバンドセンター$\varepsilon_d$は、図2からわかる。\\
+dバンドセンター$\varepsilon_d$は、図\ref{fig:dosmetal}からわかる。\\
 反結合性$\varepsilon _{\sigma_g}$の占有度fは表面のd状態の占有度を用いて近似した。
 金属sp軌道と相互作用した後のH2の結合性、反結合性の準位の位置$\varepsilon _{\sigma_g},
 \varepsilon _{\sigma_u^*}$は、金属にほどんと依存しないとして、Ref[34]、
@@ -228,15 +266,34 @@ $M_H$や$M_d$は水素や金属原子周りのポテンシャル(Jellium計算�
 $\eta$は結合角度に依存するパラメータである。
 
 このようにして得られた種々の値から式(\ref{deltaets})より$\delta E_{ts}$を求める。
-計算した$\delta E_{ts}$の値をエネルギー計算結果と共にプロットしたものが、図5である。
+計算した$\delta E_{ts}$の値をエネルギー計算結果と共にプロットしたものが、
+図\ref{fig:plot}である。
+
+\begin{figure}[hbtp]
+    \begin{center}
+     \includegraphics[width=8cm]{figure/plot.png}
+    \end{center}
+    \caption{各金属上での吸着エネルギーと指標のプロット}
+    \label{fig:plot}
+\end{figure}
+
 このプロットから、提案した反応性指標$\delta E_{ts}$と実験結果には強い相関が見て取れる。
 
-各項の値は表1に示したとおりである。この表からパウリ反発の項である$\alpha V^2$を
-1項目の$\varepsilon _{\sigma_u^*}$相互作用が打ち消すように働いていることが分かる。
+\begin{figure}[hbtp]
+    \begin{center}
+     \includegraphics[width=16cm]{figure/table.png}
+    \end{center}
+    \caption{各項の計算値}
+    \label{fig:table}
+\end{figure}
+
+各項の値は表\ref{fig:table}に示したとおりである。この表からパウリ反発の項である
+$\alpha V^2$を1項目の$\varepsilon _{\sigma_u^*}$相互作用が打ち消すように働いて
+いることが分かる。
 これは、1項目と3項目におけるVのスケーリング、寄与が近いためである。
 
 Auは反応性が著しく低い不活性な金属として知られており、反応性指標$\delta E_{ts}$からも
-その傾向が見て取れる。(図5)
+その傾向が見て取れる。(図\ref{fig:plot})
 これは、Auの$| \varepsilon _{\sigma_u^*} - \varepsilon _d|$が今考えているほかのどの
 金属よりも大きいために、式(\ref{deltaets})の1項目$-2 \frac{ V^2 }{\varepsilon _
 {\sigma_u^*} - \varepsilon _d}$が反発項$\alpha V^2$に対して小さくなってしまい
@@ -244,7 +301,7 @@ Auは反応性が著しく低い不活性な金属として知られており、
 Auはdバンドがあるにもかかわらず反応性の低い金属になっている。
 
 \section{結論}
-遷移金属、貴金属、およびその合金において、水素の反応性傾向を理解するためには、金属の
+遷移金属、貴金属およびその合金において、水素の反応性傾向を理解するためには、金属の
 自由電子との相互作用によりシフトした後の分子軌道と、金属dバンドとの間の相互作用を
 考えなければならない。また、反応性と決定づけている表面の重要なパラメータはdバンド
 の位置$\varepsilon_d$と反結合性準位の占有度f、そして、結合エネルギーの要素Vである。
