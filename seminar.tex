@@ -130,6 +130,8 @@ DOSを示している。
     \label{fig:dosmetal}
 \end{figure}
 
+実線は各原子の状態密度を表し、点線はバルク状態での状態密度を表している。
+
 $\text{Cu}_\text{3}$Ptではdバンドの頂点がFermi準位と交差していることに注目してほしい。
 これは、$\text{Cu}_\text{3}$Ptのdバンドがほどんど占有されておりd空孔がないことを示している。
 また$\text{Cu}_\text{3}$Pt中のPtサイトのLDOS($\text{E}_\text{F}$)はPt単体より小さいことが分かる。
@@ -298,15 +300,32 @@ $\eta$は結合角度に依存するパラメータ、rは原子間の距離で�
 このプロットから、提案した反応性指標$\delta \text{E}_\text{ts}$と実験結果には強い相関が
 見て取れる。
 
-\begin{figure}[hbtp]
-    \begin{center}
-     \includegraphics[width=14cm]{figure/table.png}
-    \end{center}
-    \caption{各項の計算値}
-    \label{fig:table}
-\end{figure}
 
-各項の値は表\ref{fig:table}に示したとおりである。この表からパウリ反発の項である
+\begin{table}[htb]
+  \begin{center}
+    \caption{式\ref{deltaets}の各項の計算値}
+    \begin{tabular}{l|cccccc} \hline
+    \label{table}
+      Metal & $\varepsilon_\text{d}$ & $\text{V}^\text{2}$ & -2 $\frac{ V^2 }{\varepsilon _{\sigma_u^*}- \varepsilon _d}$ & $-2(1-f)\frac{V^2}{\varepsilon _d - \varepsilon _{\sigma_g}} $ & $\alpha \text{V}^\text{2}$ & $\delta \text{E}_\text{ts}$ \\ \hline
+      Cu                        & -2.67 & 2.42 & -1.32 & 0     & 1.02 & -0.30 \\
+      Cu:$\text{Cu}_\text{3}$Pt & -2.35 & 2.42 & -1.44 & 0     & 1.02 & -0.42 \\
+      Pt:$\text{Cu}_\text{3}$Pt & -2.55 & 9.44 & -5.32 & -0.42 & 3.96 & -1.78 \\
+      Pt                        & -2.75 & 9.44 & -5.03 & -0.44 & 3.96 & -1.51 \\
+      Ni                        & -1.48 & 2.81 & -2.27 & -0.10 & 1.18 & -1.19 \\ 
+      Ni:NiAl                   & -1.91 & 2.81 & -1.93 & -0.11 & 1.18 & -0.86 \\
+      Au                        & -3.91 & 8.10 & -3.30 & 0     & 3.40 & 0.10  \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+% \begin{figure}[hbtp]
+%     \begin{center}
+%      \includegraphics[width=14cm]{figure/table.png}
+%     \end{center}
+%     \caption{各項の計算値}
+%     \label{fig:table}
+% \end{figure}
+各項の値は表\ref{table}に示したとおりである。この表からパウリ反発の項である
 $\alpha V^2$を1項目の$\varepsilon _{\sigma_u^*}$-d相互作用が打ち消すように働いて
 いることが分かる。
 これは、1項目と3項目におけるVの寄与が近いためである。
