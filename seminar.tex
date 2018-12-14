@@ -351,9 +351,15 @@ Auはdバンドがあるにもかかわらず反応性の低い金属になっ�
 \subsection{CO－金属間の相互作用}
 金属dバンドと相互作用するCOの軌道は2$\pi^*$と5$\sigma$である。$\text{H}_\text{2}$
 吸着の場合と同様に、d電子を持たない金属(Al)とのsp相互作用およびd電子を持つ金属(Pt)とのd相互作用
-によってDOSがどのように変化するのかを図\   に示した。
+によってDOSがどのように変化するのかを図\ref{fig:codos}   に示した。
 
-% ここに　FIG1　が来る
+\begin{figure}[hbtp]
+    \begin{center}
+     \includegraphics[width=8cm]{figure/CO_dos.png}
+    \end{center}
+    \caption{CO-金属相互作用したDOS}
+    \label{fig:codos}
+\end{figure}
 
 d相互作用によって反結合性5$\sigma$－d準位はフェルミ準位の上に、結合性2$\pi^*$－d準位は
 フェルミ準位の下に位置している。したがってCOの吸着でも同じように、d相互作用はCO-金属間の結合を
@@ -411,6 +417,14 @@ $\text{V}_\sigma/\text{V}_\pi \simeq 1.3$という近似が成り立つことが
 %     \end{center}
 %   \end{table}
 
+\begin{table}[hbtp]
+    \begin{center}
+    \caption{式\ref{ECO}の各項の計算値}
+     \includegraphics[width=10cm]{figure/table2.png}
+    \end{center}
+    \label{table2}
+\end{table}
+
 \subsection{CO吸着エネルギーの計算}
 これらの値を実際の反応の傾向と比較するため、各金属上におけるCO吸着エネルギーのDFT計算を行った。\\
 交換相関汎関数にはGGAを用い、6層の金属fcc(111)面\footnote{Ruに対してはhcp(0001)を用いた}
@@ -423,7 +437,14 @@ $C_{3v}$と$C_{2v}$規約ブリルアンゾーンにそれぞれ6、15のk点を
 \subsection{CO吸着における実際の反応性と指標$\text{E}_\text{d-hyb}$との相関}
 求めた吸着エネルギーと式\ref{ECO}の値とをプロットしたものが以下の図である。
 
-% ここに　FIG2　がくる
+\begin{figure}[hbtp]
+    \begin{center}
+     \includegraphics[width=8cm]{figure/plot2.png}
+    \end{center}
+    \caption{各金属上でのCO吸着エネルギーと指標のプロット}
+    \label{fig:coplot}
+\end{figure}
+
 このプロットから、吸着質-金属d相互作用は金属上でのCO吸着の主要な反応性の傾向を見積もることが
 できると言える。また、破線で示されている通り、単一結晶表面と複数結晶の構造とでは化学吸着エネルギー
 が変化していることがわかる。これは、各金属において、dバンドセンターが違うためにおこる変化であると
