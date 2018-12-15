@@ -11,7 +11,6 @@
 \maketitle
 %\thispagestyle{empty}
 \tableofcontents
-
 \end{titlepage}
 
 \section{はじめに}
@@ -351,7 +350,7 @@ Auはdバンドがあるにもかかわらず反応性の低い金属になっ�
 \subsection{CO－金属間の相互作用}
 金属dバンドと相互作用するCOの軌道は2$\pi^*$と5$\sigma$である。$\text{H}_\text{2}$
 吸着の場合と同様に、d電子を持たない金属(Al)とのsp相互作用およびd電子を持つ金属(Pt)とのd相互作用
-によってDOSがどのように変化するのかを図\ref{fig:codos}   に示した。
+によってDOSがどのように変化するのかを図\ref{fig:codos}に示した。\cite{Hammer1996}
 
 \begin{figure}[hbtp]
     \begin{center}
@@ -398,8 +397,7 @@ $\text{V}_\sigma/\text{V}_\pi \simeq 1.3$という近似が成り立つことが
 と近似できる。ただし$\beta$は比例定数である。
 
 以上で式\ref{ECO}の各項の計算ができるようになったため、実際に各金属について計算を行った。
-結果は以下のようになった。
-
+結果は以下の表\ref{table2}ようになった。
 % \begin{table}[htb]
 %     \begin{center}
 %       \caption{式\ref{deltaets}の各項の計算値}
@@ -434,27 +432,28 @@ $\text{V}_\sigma/\text{V}_\pi \simeq 1.3$という近似が成り立つことが
 $C_{3v}$と$C_{2v}$規約ブリルアンゾーンにそれぞれ6、15のk点を設定した。
 以上の計算から得られたデータは、他の論文での計算結果や実験結果と定量的によい一致が見られた。
 
-\subsection{CO吸着における実際の反応性と指標$\text{E}_\text{d-hyb}$との相関}
-求めた吸着エネルギーと式\ref{ECO}の値とをプロットしたものが以下の図である。
+\subsection{CO吸着における実際の反応性と指標との相関}
+求めた吸着エネルギーと式\ref{ECO}の値$\text{E}_\text{d-hyb}$とをプロットしたものが
+以下の図\ref{fig:coplot}である。
 
 \begin{figure}[hbtp]
     \begin{center}
-     \includegraphics[width=8cm]{figure/plot2.png}
+     \includegraphics[width=10cm]{figure/plot2.png}
     \end{center}
     \caption{各金属上でのCO吸着エネルギーと指標のプロット}
     \label{fig:coplot}
 \end{figure}
 
 このプロットから、吸着質-金属d相互作用は金属上でのCO吸着の主要な反応性の傾向を見積もることが
-できると言える。また、破線で示されている通り、単一結晶表面と複数結晶の構造とでは化学吸着エネルギー
-が変化していることがわかる。これは、各金属において、dバンドセンターが違うためにおこる変化であると
-考えられる。
+できると言える。また、破線で示されている通り、単一結晶表面と複数結晶の構造とでは吸着エネルギー
+が変化していることがわかる。これは、各金属においてdバンドセンターが違うために引き起こされる
+変化であると考えられる。
 
 \section{結論}
-遷移金属、貴金属およびその合金において、水素吸着の反応性を理解するためには、金属の
-自由電子との相互作用によりシフトした後の分子軌道と、金属dバンドとの間の相互作用を
-考えなければならない。また、反応性を決定づけている金属表面の重要なパラメータはdバンド
-の位置$\varepsilon_d$と反結合性準位の占有度f、そして、結合エネルギーの要素Vである。
+遷移金属、貴金属およびその合金において、反応性を理解するためには金属spバンドとの
+相互作用によりシフトした後の分子軌道と、金属dバンドとの間の相互作用を考える必要がある。
+また、反応性を決定づけている金属表面の重要なパラメータはdバンドセンター$\varepsilon_d$と
+反結合性準位の占有度f、そして、結合エネルギーの要素Vである。
 
 \bibliographystyle{unsrt}
 \bibliography{MyCollection}
