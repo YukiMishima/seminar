@@ -86,7 +86,7 @@ Peter,Hammanはフェルミ準位における局所状態密度(Local Density of
 Troullier-Martins型のものを用いた。}
 
 \subsection{計算結果}
-各金属の(111)面上での$\text{H}_\text{2}$のエネルギー計算結果は図\ref{fig:potential}Aのよう
+各金属の(111)面上での$\text{H}_\text{2}$の吸着エネルギー計算結果は図\ref{fig:potential}Aのよう
 になった。\\
 \begin{figure}[hbtp]
     \begin{center}
@@ -107,8 +107,9 @@ Al、Cu、$\text{Cu}_\text{3}$Pt内のCuサイトでの解離吸着は大きな�
 吸着エネルギーの計算をCu表面について行った。計算結果は図\ref{fig:potential}の点線で示されている
 とおりである。エネルギー障壁は若干小さくなるものの、傾向は変わらないことが確認できる。
 
-計算したポテンシャルのこれらの特徴、すなわち、CuとAl表面では解離吸着に大きな障壁を伴い、
-Ptと$\text{Cu}_\text{3}$Ptでは自発的に反応が進むという傾向は実験の結果と同じであった。
+計算結果のこれらの特徴、すなわち、CuとAlと$\text{Cu}_\text{3}$Pt内のCuサイトと表面では解離吸着に
+大きな障壁を伴い、Ptと$\text{Cu}_\text{3}$PtのPtサイトでは自発的に反応が進むという傾向は
+実験の結果と同じであった。
 
 \section{考察}
 
@@ -147,13 +148,13 @@ $\text{N}_\text{h}$では説明できないケースということになる。
     \delta E_{es}
 \end{equation}
 1項目は、吸着に関する軌道におけるエネルギーの差であり、
-2項目は、吸着質の静電エネルギーの差である。変分原理のために、エネルギー差の誤差は密度と
+2項目は、吸着質の静電エネルギーの差である。変分原理のために、計算結果の誤差は密度と
 ポテンシャルを固定していることによる誤差の二次オーダーである。
 式(\ref{eabs})より、大きな電荷移動がなく静電エネルギーの差が重要でない場合は障壁の大きさの
 違い、すなわち1項目の軌道エネルギーの差から金属の反応性を見積もることができる。
 
 \subsubsection{d電子を持たない金属表面の反応性}
-式(\ref{eabs})を用いて吸着エネルギーの差における定性的な理解を試みよう。
+式(\ref{eabs})を用いて吸着エネルギーの差における定性的な理解を試みる。
 まずは、d電子を持たず、s,p電子のみを持つ金属表面と水素分子の相互作用を考える。
 \begin{figure}[hbtp]
     \begin{center}
@@ -214,11 +215,11 @@ Cuの方が障壁が少し低いという結果になる。
 図\ref{fig:dinteractedDOS}より反結合性$\sigma _\text{u} ^* $－d 準位はどの金属においても
 Fermi準位の上に位置していることからこの準位は占有されていないことが分かる。
 したがって、$ \sigma _\text{u} ^*$－d相互作用は常に安定化に寄与している。
-Cuと$\text{Cu}_\text{3}$Ptでは結合強度(V)とdバンドの位置はどちらもほとんど同じであるため、
+Cuと$\text{Cu}_\text{3}$Ptでは結合強度Vとdバンドの位置はどちらもほとんど同じであるため、
 $ \sigma _\text{u}^*$－d相互作用の大きさは同程度であると考えられる。
 PtとCuではdバンドの位置はほとんど同じ(図\ref{fig:dosmetal})であるが、
-Ptの方がより結合強度が大きいためPtはCuよりも$ \sigma _\text{u}^*$－d相互作用が大きい。
-結合強度の違いは相互作用に用いられるd軌道がCuは3d軌道であるのに対してPtはよりバンドが
+Ptの方がより結合強度Vが大きいためPtはCuよりも$ \sigma _\text{u}^*$－d相互作用が大きい。
+結合強度Vの違いは相互作用に用いられるd軌道がCuは3d軌道であるのに対してPtはよりバンドが
 大きい5d軌道であることに起因する。
 
 $\sigma _\text{g}$－d相互作用は、表面の金属によってかなり大きさが変わる。
@@ -243,7 +244,7 @@ $\sigma_\text{g}$－d準位の非占有度であり、この準位の占有度�
 高いほど相互作用の効果が減少するためにかけられている。
 3項目は直交化に伴うパウリ反発(αは比例定数)を表す項である。
 
-このように分子と金属dバンドの相互作用をを取り込むことで、従来の非摂動金属表面の性質のみに
+このように分子と金属dバンドの相互作用を取り込むことで、従来の非摂動金属表面の性質のみに
 依存した反応性理論(LDOS($\text{E}_\text{F}$)、$\text{N}_\text{h}$)に比べ、
 反応性指標の向上が見込まれる。過去に、Hoffmannもまた分子と金属dバンドの相互作用について
 指摘していた\cite{Hoffman1988}が、我々の指標では分子-金属sp相互作用後の準位を用いて
@@ -307,7 +308,7 @@ $\eta$は結合角度に依存するパラメータ、rは原子間の距離で�
 %     \label{fig:table}
 % \end{figure}
 式\ref{deltaets}の各項の値は表\ref{table}に示したとおりである。この表からパウリ反発の項である
-$\alpha V^2$を1項目の$\varepsilon _{\sigma_u^*}$－d相互作用が打ち消すように働いて
+$\alpha V^2$を1項目の$\sigma_u^*$－d相互作用が打ち消すように働いて
 いることが分かる。
 これは、1項目と3項目におけるVの寄与が近いためである。
 
@@ -350,11 +351,11 @@ d相互作用によって反結合性5$\sigma$－d準位はフェルミ準位の
 \begin{equation}
     \begin{split}
         \label{ECO}
-        E_{d-hyb} \simeq &-4\left[f\frac{V_\pi^2}{\varepsilon_{2\pi}-\varepsilon_d}-\alpha f V_\pi^2\right] \\
+        \delta E_{d-hyb} \simeq &-4\left[f\frac{V_\pi^2}{\varepsilon_{2\pi}-\varepsilon_d}-\alpha f V_\pi^2\right] \\
         &-2\left[(1-f)\frac{V_\sigma^2}{\varepsilon_d - \varepsilon_{5\sigma}}+-\alpha(1+f)V_\sigma^2\right]
     \end{split}
 \end{equation}
-この式を用いて$\text{E}_\text{d-hyb}$の計算を行っていこう。\\
+この式を用いて$\delta\text{E}_\text{d-hyb}$の計算を行っていこう。\\
 dバンドの占有度fおよびdバンドセンター$\varepsilon_\text{d}$は$\text{H}_\text{2}$吸着の場合と
 同様にDOSから見積もることができる。sp相互作用後の2$\pi$準位の位置$\varepsilon_{2\pi}$と
 5$\sigma$準位の位置$\varepsilon_\text{5\sigma}$は表面の金属に依存しないためそれぞれ+2.5eV,-7eVと
@@ -408,7 +409,7 @@ $C_{3v}$と$C_{2v}$規約ブリルアンゾーンにそれぞれ6、15のk点を
 以上の計算から得られたデータは、他の論文での計算結果や実験結果と定量的によい一致が見られた。
 
 \subsection{CO吸着における実際の反応性と指標との相関}
-求めた吸着エネルギーと式\ref{ECO}の値$\text{E}_\text{d-hyb}$とをプロットしたものが
+求めた吸着エネルギーと式\ref{ECO}の値$\delta\text{E}_\text{d-hyb}$とをプロットしたものが
 以下の図\ref{fig:coplot}である。
 \begin{figure}[hbtp]
     \begin{center}
